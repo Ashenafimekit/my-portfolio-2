@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# My Portfolio 
 
-## Project info
+Professional developer portfolio showcasing projects, skills, and contact methods.
 
-**URL**: https://lovable.dev/projects/06bbde72-459a-42e7-aad9-77f1fe568fd7
+---
 
-## How can I edit this code?
+## Description
 
-There are several ways of editing your application.
+This is a modern, responsive developer portfolio built with TypeScript and React (Vite). It demonstrates front-end craftsmanship, accessible UI components, theme-aware styling (dark / light), and an organized showcase of projects and experience. The site is intended to present real work, provide a way for visitors to contact the author, and act as a living resume for hiring managers and collaborators.
 
-**Use Lovable**
+Key goals:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/06bbde72-459a-42e7-aad9-77f1fe568fd7) and start prompting.
+- Present projects with images, tech stacks, and links to source/demos
+- Highlight skills, experience, and testimonials
+- Provide an accessible, mobile-first UI with a toggleable theme
+- Offer an easy way to contact the developer
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+- Project showcase with descriptions, tags, and links (GitHub, Live demo)
+- Responsive Hero section and smooth scroll navigation
+- Dark / Light theme toggle and system preference detection
+- Contact section with an email link (or form integration if configured)
+- Experience, Skills, and Testimonials sections
+- Accessible navigation and keyboard-friendly components
+- Reusable UI primitives/components for fast iteration
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Frontend: React, TypeScript, Vite
+- Styling: Tailwind CSS, PostCSS
+- UI: Custom component library (in `src/components/ui`) and accessible primitives
+- Build / Tooling: Bun/npm-compatible lockfile, ESLint, TypeScript, Vite
+- Hosting: Static-friendly (Netlify / Vercel / GitHub Pages)
 
-Follow these steps:
+## Badges
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+You can add badges like these near the top of the README if desired:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- ![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6.svg?style=flat&logo=typescript&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=flat&logo=vite&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC.svg?style=flat&logo=tailwindcss&logoColor=white)
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Follow these steps to run the project locally.
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/Ashenafimekit/my-portfolio-2.git
+cd my-portfolio-2
+```
+
+2. Install dependencies
+
+If you use npm:
+
+```bash
+npm install
+```
+
+If you prefer Bun:
+
+```bash
+bun install
+```
+
+3. Start the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start Vite's dev server (usually at http://localhost:5173). The exact port appears in the terminal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Usage
 
-**Use GitHub Codespaces**
+- Open the site in the browser at the dev server URL.
+- Use the navigation bar to jump to sections: About, Projects, Experience, Skills, Contact.
+- Toggle theme using the theme control in the navbar or let the site follow your OS preference.
+- Visit a project's card to see details, view the GitHub repository, or go to the live demo.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Tips for testing and previewing production build:
 
-## What technologies are used for this project?
+```bash
+# build for production
+npm run build
 
-This project is built with:
+# preview the production build locally
+npm run preview
+```
+## Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Email: ashumekit502@gmail.com
+- GitHub: https://github.com/Ashenafimekit
+- LinkedIn: https://www.linkedin.com/in/ashenafimekit
+- Live site: 
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/06bbde72-459a-42e7-aad9-77f1fe568fd7) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
+If this repository is open-source, add a license (for example, MIT). Create a `LICENSE` file at the project root and reference it here.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

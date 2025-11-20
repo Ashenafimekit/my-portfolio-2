@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Download, Mail } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
+import { Button } from "@/components/ui/button";
 import { personalInfo } from "@/data/portfolio";
+import { motion } from "framer-motion";
+import { Download, Mail } from "lucide-react";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -87,14 +87,28 @@ export const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-primary hover:opacity-90 transition-opacity"
-                onClick={scrollToContact}
+                asChild
               >
-                <Mail className="mr-2 h-5 w-5" />
-                Hire Me
+                <a
+                  href="mailto:ashumekit502@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Hire Me
+                </a>
               </Button>
+
               <Button size="lg" variant="outline">
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
+                <a
+                  href="https://drive.google.com/file/d/13wgNUYhEaenNKRhLh5BlbKUCeBo2iZLg/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download CV
+                </a>
               </Button>
             </motion.div>
           </motion.div>

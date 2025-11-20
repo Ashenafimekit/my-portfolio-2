@@ -7,7 +7,7 @@ const skillCategories = [
   { title: "Frontend", skills: skills.frontend, color: "bg-primary/10 text-primary border-primary/20" },
   { title: "Backend", skills: skills.backend, color: "bg-accent/10 text-accent border-accent/20" },
   { title: "DevOps", skills: skills.devops, color: "bg-secondary text-secondary-foreground border-border" },
-  { title: "Tools", skills: skills.tools, color: "bg-muted text-muted-foreground border-border" },
+  { title: "CMS", skills: skills.cms, color: "bg-secondary text-secondary-foreground border-border" },
 ];
 
 export const Skills = () => {

@@ -1,9 +1,14 @@
+import arabAliMockup from "@/assets/arab-ali-hotel-web-mock.png";
+import lensCraftMockup from "@/assets/lens-craft-mockup.png";
+import travelEasyMockup from "@/assets/travel-easy-mockup.png";
+import privateImage from "@/assets/private.jpg"
+
 export const personalInfo = {
   name: "Ashenafi Mekit",
   title: "Software Developer",
   bio: "Software Developer specializing in full-stack applications using React.js, Next.js, NestJS, Express.js, PostgreSQL, MongoDB, and WordPress. Passionate about clean architecture, problem-solving, and building scalable real-world solutions.",
   email: "ashumekit502@gmail.com",
-  location: "Dire Dawa, Ethiopia",
+  location: "Addis Ababa, Ethiopia",
   github: "https://github.com/Ashenafimekit",
   linkedin: "https://linkedin.com/in/ashenafi-mekit",
   twitter: "",
@@ -15,23 +20,13 @@ export const skills = {
     "Next.js",
     "TypeScript",
     "Tailwind CSS",
-    "Zod",
     "TanStack Query",
-    "HTML5",
-    "CSS3",
-    "WordPress",
+    "Zustand",
+    "Framer Motion",
   ],
-  backend: [
-    "Node.js",
-    "Express.js",
-    "NestJS",
-    "Prisma ORM",
-    "PostgreSQL",
-    "MongoDB",
-    "REST APIs",
-  ],
-  devops: ["Docker", "GitHub Actions", "Vercel", "Railway", "CI/CD"],
-  tools: ["Git", "VS Code", "Postman", "Figma", "Thunder Client"],
+  backend: ["Node.js", "NestJS", "PostgreSQL", "MongoDB", "REST APIs"],
+  devops: ["Docker", "GitHub Actions"],
+  cms: ["WordPress"],
 };
 
 export const experience = [
@@ -42,10 +37,10 @@ export const experience = [
     location: "Addis Ababa, Ethiopia",
     period: "2025 - Present",
     description:
-      "Building and maintaining internal systems and digital services using React, Next.js, NestJS, Express, PostgreSQL, MongoDB, and WordPress.",
+      "Building and maintaining internal systems and digital services using React, Next.js, NestJS, Express, PostgreSQL.",
     responsibilities: [
-      "Implemented secure authentication and authorization workflows with Next.js and NestJS.",
-      "Built scalable internal tools with PostgreSQL and Prisma ORM.",
+      "Built and maintained full-stack application features across both frontend and backend systems.",
+      "Developed scalable internal tools and optimized existing system workflows.",
       "Collaborated with cross-functional teams to deliver high-quality software solutions.",
     ],
   },
@@ -56,11 +51,11 @@ export const experience = [
     location: "Dire Dawa, Ethiopia",
     period: "2023 - 2024",
     description:
-      "Worked on full-stack web applications using React, Express, Node.js, MongoDB, and WordPress, gaining hands-on experience in production-level projects.",
+      "Gained hands-on experience developing and customizing WordPress-based websites, managing content, and supporting client projects.",
     responsibilities: [
-      "Built and deployed full-stack features using React and Express.js.",
-      "Integrated MongoDB databases and REST APIs for client projects.",
-      "Collaborated in a team environment to deliver timely software solutions.",
+      "Developed and customized WordPress websites to meet client requirements.",
+      "Configured themes, plugins, and content structures to ensure optimal website performance.",
+      "Collaborated with the team to deliver responsive and user-friendly web solutions.",
     ],
   },
   {
@@ -82,58 +77,47 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "Eastern Link — Job Seeking Platform",
+    title: "Ethio Telecom Fleet Management System",
     description:
-      "A modern job-seeking and recruitment platform with role-based access, user authentication, job posting, and application workflows. Built with Next.js, NestJS, Prisma, PostgreSQL, and React.",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop",
-    tech: ["Next.js", "NestJS", "Prisma", "PostgreSQL", "React"],
-    github: "",
-    demo: "",
+      "Private internal system used by Ethio Telecom for managing fleet requests, drivers, vehicles, and locations. Designed for secure operational management within the organization.",
+    image: privateImage,
+    tech: ["Private"],
+    github: "private",
+    demo: "private",
+    personal: false,
   },
   {
     id: 2,
-    title: "TravelEase",
+    title: "Arab Ali Hotel Website",
     description:
-      "A personal travel planning platform helping users organize trips, bookings, and locations. Built with React, Node.js, Express, MongoDB, and WordPress.",
-    image:
-      "https://images.unsplash.com/photo-1511732351157-1865efcb7b7b?w=800&h=600&fit=crop",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "WordPress"],
-    github: "",
-    demo: "",
+      "Web application for hotel room reservations and showcasing services. Fully deployed on Vercel.",
+    image: arabAliMockup,
+    tech: ["React.js", "Express.js", "MongoDB"],
+    github: "https://github.com/Ashenafimekit/AAH",
+    demo: "https://arab-ali-hotel.vercel.app",
+    personal: true,
   },
   {
     id: 3,
-    title: "Integrated Healthcare Management System",
+    title: "TravelEase",
     description:
-      "University capstone project for hospitals to manage patient data, appointments, and medical records. Built with React, Node.js, Express, and MongoDB.",
-    image:
-      "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=800&h=600&fit=crop",
-    tech: ["React", "Node.js", "Express.js", "MongoDB"],
-    github: "",
-    demo: "",
+      "Web platform for planning trips and managing cross-country bus bookings. v1 is deployed on Vercel, while v2 is in progress focusing on improved architecture and features.",
+    image: travelEasyMockup,
+    tech: ["React.js", "Express.js", "MongoDB"],
+    github: "https://github.com/Ashenafimekit/TravelEasy",
+    demo: "https://travel-easy-lime.vercel.app",
+    personal: true,
   },
   {
     id: 4,
-    title: "Fuel & Fleet Request Form",
+    title: "Lens Craft",
     description:
-      "Dynamic fleet request system with conditional inputs, Zod validation, and real-time form logic using Next.js and TypeScript.",
-    image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop",
-    tech: ["Next.js", "TypeScript", "Zod"],
-    github: "",
-    demo: "",
-  },
-  {
-    id: 5,
-    title: "Heman Mining Company Website",
-    description:
-      "Website for Heman Mining Company showcasing coal, lithium, and gypsum mining operations. Built with Next.js, React, Tailwind CSS, and WordPress integration.",
-    image:
-      "https://images.unsplash.com/photo-1603832447831-8c4b63f8e61c?w=800&h=600&fit=crop",
-    tech: ["Next.js", "React", "Tailwind CSS", "WordPress"],
-    github: "",
-    demo: "",
+      "Personal photography website to showcase professional photography works, galleries, and visual content.",
+    image: lensCraftMockup,
+    tech: ["React.js", "Tailwind CSS"],
+    github: "https://github.com/Ashenafimekit/LensCraft",
+    demo: "https://lens-craft-photography.vercel.app",
+    personal: true,
   },
 ];
 

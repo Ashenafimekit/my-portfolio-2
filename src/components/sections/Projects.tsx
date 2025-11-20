@@ -1,9 +1,16 @@
-import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { projects } from "@/data/portfolio";
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 
 export const Projects = () => {
   return (
@@ -17,10 +24,14 @@ export const Projects = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+            Featured{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            Here are some of my recent projects that showcase my skills and
+            experience
           </p>
         </motion.div>
 
@@ -42,10 +53,19 @@ export const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                
+
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription className="line-clamp-2">{project.description}</CardDescription>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    {project.personal && (
+                      <Badge variant="outline" className="text-xs">
+                        Personal
+                      </Badge>
+                    )}
+                  </div>
+                  <CardDescription className="line-clamp-2">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
 
                 <CardContent className="flex-1">
@@ -59,14 +79,41 @@ export const Projects = () => {
                 </CardContent>
 
                 <CardFooter className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="flex-1"
+                    asChild
+                  >
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={
+                        project.github === "private"
+                          ? "pointer-events-none opacity-50"
+                          : ""
+                      }
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" className="flex-1 bg-gradient-primary" asChild>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="sm"
+                    className="flex-1 bg-gradient-primary"
+                    asChild
+                  >
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={
+                        project.demo === "private"
+                          ? "pointer-events-none opacity-50"
+                          : ""
+                      }
+                    >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
                     </a>

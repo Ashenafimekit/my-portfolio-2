@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Briefcase, MapPin, Calendar } from "lucide-react";
 import { experience } from "@/data/portfolio";
+import { motion } from "framer-motion";
+import { Briefcase, Calendar, CircleChevronRight, MapPin } from "lucide-react";
 
-export const  Experience = () => {
+export const Experience = () => {
   return (
     <section id="experience" className="py-20">
       <div className="container mx-auto px-4">
@@ -15,7 +15,10 @@ export const  Experience = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Work <span className="bg-gradient-primary bg-clip-text text-transparent">Experience</span>
+            Work{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Experience
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             My professional journey and the roles I've held
@@ -34,9 +37,7 @@ export const  Experience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className={`relative mb-12 ${
-                  index % 2 === 0 ? "md:pr-1/2 md:text-right" : "md:pl-1/2 md:ml-auto"
-                }`}
+                className={`relative mb-12`}
               >
                 {/* Timeline Dot */}
                 <div className="hidden md:block absolute top-6 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background shadow-lg" />
@@ -48,7 +49,9 @@ export const  Experience = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-1">{job.title}</h3>
-                      <p className="text-lg text-primary font-semibold mb-2">{job.company}</p>
+                      <p className="text-lg text-primary font-semibold mb-2">
+                        {job.company}
+                      </p>
                       <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-4">
                         <div className="flex items-center gap-1">
                           <MapPin className="h-4 w-4" />
@@ -62,13 +65,19 @@ export const  Experience = () => {
                     </div>
                   </div>
 
-                  <p className="text-muted-foreground mb-4">{job.description}</p>
+                  <p className="text-muted-foreground mb-4 ">
+                    {job.description}
+                  </p>
 
                   <ul className="space-y-2">
                     {job.responsibilities.map((responsibility, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">▹</span>
-                        <span className="text-muted-foreground">{responsibility}</span>
+                        <span className="text-primary mt-1">
+                          <CircleChevronRight size={14} />
+                        </span>
+                        <span className="text-muted-foreground">
+                          {responsibility}
+                        </span>
                       </li>
                     ))}
                   </ul>

@@ -11,7 +11,6 @@ export const personalInfo = {
   location: "Addis Ababa, Ethiopia",
   github: "https://github.com/Ashenafimekit",
   linkedin: "https://linkedin.com/in/ashenafi-mekit",
-  twitter: "",
 };
 
 export const skills = {

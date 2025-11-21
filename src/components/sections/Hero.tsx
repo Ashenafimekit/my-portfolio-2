@@ -101,7 +101,7 @@ export const Hero = () => {
 
               <Button size="lg" variant="outline">
                 <a
-                  href="https://drive.google.com/file/d/13wgNUYhEaenNKRhLh5BlbKUCeBo2iZLg/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1tnqsktDQMY25k5J-2dmPoFYhE8vEtSNX/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex"

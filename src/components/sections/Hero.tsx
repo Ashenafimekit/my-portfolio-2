@@ -23,6 +23,9 @@ export const Hero = () => {
         <img
           src={heroBg}
           alt="Hero background"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
@@ -101,7 +104,7 @@ export const Hero = () => {
 
               <Button size="lg" variant="outline">
                 <a
-                  href="https://drive.google.com/file/d/1tnqsktDQMY25k5J-2dmPoFYhE8vEtSNX/view?usp=sharing"
+                  href="https://drive.google.com/file/d/11H49WpR04WbeGk_RDoYI6cTqyD9agcia/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex"

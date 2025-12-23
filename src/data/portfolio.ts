@@ -1,7 +1,7 @@
 import arabAliMockup from "@/assets/arab-ali-hotel-web-mock.png";
 import lensCraftMockup from "@/assets/lens-craft-mockup.png";
+import privateImage from "@/assets/private.jpg";
 import travelEasyMockup from "@/assets/travel-easy-mockup.png";
-import privateImage from "@/assets/private.jpg"
 
 export const personalInfo = {
   name: "Ashenafi Mekit",
@@ -127,7 +127,7 @@ export const testimonials = [
     position: "Founder",
     company: "Heman Mining Company",
     image:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&h=400&fit=crop",
+      "https://plus.unsplash.com/premium_vector-1727956885330-0b80b9df0fc7?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content:
       "Ashenafi delivered a clean and professional website for our company. His ability to understand requirements and translate them into functional software is impressive.",
     rating: 5,
@@ -138,7 +138,7 @@ export const testimonials = [
     position: "Software Development Lead",
     company: "Ethio Telecom",
     image:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&h=400&fit=crop",
+      "https://plus.unsplash.com/premium_vector-1727953895916-9f643d7d4b94?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content:
       "Ashenafi is a reliable developer who writes clean, maintainable code. He collaborates well with the team and always delivers high-quality work.",
     rating: 5,
@@ -149,7 +149,7 @@ export const testimonials = [
     position: "Tech Mentor",
     company: "Afronex Tech Hub",
     image:
-      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop",
+      "https://plus.unsplash.com/premium_vector-1682269287900-d96e9a6c188b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400&h=400&fit=crop",
     content:
       "He learns quickly, solves problems efficiently, and consistently delivers quality work. Ashenafi shows strong potential as a full-stack developer.",
     rating: 5,

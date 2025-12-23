@@ -47,7 +47,7 @@ export const Hero = () => {
               className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 border border-primary/20"
             >
               <span className="text-sm font-medium text-primary">
-                Available for freelance work
+                Available for Remote Work
               </span>
             </motion.div>
 
